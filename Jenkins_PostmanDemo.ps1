@@ -11,7 +11,7 @@
         # Change to directory where we have NodeJs installed.  Otherwise, the 'newman' command will not be recognized. 
         # You can install NPM and Newman as a user and copy the files from C:\Users\[username]\AppData\npm into C:\ drive.
         #cd You can find the NPM packages here: C:\Users\[username]\AppData\Roaming\npm\node_modules\newman\bin
-        cd C:\Program Files\nodejs\node_modules\npm\bin
+        cd "C:\Program Files\nodejs\node_modules\npm\bin"
 
         # Loop through the json files and execute newman to run the Postman tests
         foreach ($File in $JsonFiles) {
